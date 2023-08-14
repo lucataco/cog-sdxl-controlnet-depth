@@ -1,0 +1,6 @@
+__pycache__
+.cog
+control-cache
+feature-cache
+sdxl-cache
+vae-cache

@@ -14,7 +14,7 @@ Then, you can run predictions:
 
 Input:
 
-"aerial view, a futuristic research complex in a bright foggy jungle, hard lighting"
+"spiderman lecture, photorealistic"
 
 ![alt text](demo.png)
 

@@ -59,9 +59,11 @@ class Predictor(BasePredictor):
         with torch.no_grad(), torch.autocast("cuda"):
             depth_map = self.depth_estimator(image).predicted_depth
 
+        height, width = image.shape[2], image.shape[3]
+
         depth_map = torch.nn.functional.interpolate(
             depth_map.unsqueeze(1),
-            size=(1024, 1024),
+            size=(height, width),
             mode="bicubic",
             align_corners=False,
         )
